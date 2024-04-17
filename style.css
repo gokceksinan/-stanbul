@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    padding: 10px;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.bi-list {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.bi-list:hover {
+    color: red;
+    transition: .3s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: .3s;
+}
+
+.bi-list {
+    display: none;
+}
+
+/* row */
+.row {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 45%;
+}
+
+h1 {
+    color: white;
+}
+
+.description {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 15px;
+}
+
+button {
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+    transition: .3s;
+}
+
+.card-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/istanbul.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    text-shadow: 0 0 1px black ;
+}
+
+.card p{
+    text-shadow: 0 0 1px black;
+    font-size: 10px;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+    .bi-list {
+        display: block;
+        text-align: right;
+        flex: 1;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .card-col {
+        margin-top: 20px;
+    }
+
+    .card{
+        height: 180px;
+    }
+
+}
